@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, Button } from 'reactstrap';
 
-const Sitebar = (props) =() => {
+const Sitebar = (props) => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => {
         let newIsOpen = !isOpen;
@@ -15,7 +15,7 @@ const Sitebar = (props) =() => {
             <Collapse isOpen={isOpen} navbar>
                 <Nav className='ml-auto' navbar>
                     <NavItem>
-                        <Button onClick={props.clickLogout}>Logout</Button>
+                        <Button onClick={props.clearToken}>Logout</Button>
                     </NavItem>
                 </Nav>
             </Collapse>

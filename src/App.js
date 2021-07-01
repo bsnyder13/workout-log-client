@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Sitebar from './home/Navbar';
+import Sitebar from './home/Sitebar';
 import Auth from './auth/Auth';
 import WorkoutIndex from './workouts/WorkoutIndex';
 
